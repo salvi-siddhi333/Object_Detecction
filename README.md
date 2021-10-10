@@ -1,2 +1,3 @@
-# Object detection using OpenCV and Python
-
+# Object Detection
+`Python` `OpenCV` `Streamlit`
+___
