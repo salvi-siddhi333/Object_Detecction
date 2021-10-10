@@ -4,7 +4,7 @@ import streamlit as st
 def app():
     #title to home page
     st.header("Welcome to")
-    st.title("Object Prediction")
+    st.title("Object Prediction Model")
     #Image path
     st.image("./images/obj.jpg")
     #Simple text to project

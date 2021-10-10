@@ -23,7 +23,7 @@ pages = {
 
 #st.title("Welcome")
 st.sidebar.title("Object Prediction")
-st.sidebar.image("./images/obj.jpg", width=250)
+st.sidebar.image("./images/main-qimg-3783b0de7ef92fbd7e1d96a90577f089.png", width=250)
 
 
 page = st.sidebar.radio("Pages",list(pages.keys()))
