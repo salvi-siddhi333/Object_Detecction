@@ -34,7 +34,7 @@ def app():
     net.setInputMean((127.5, 127.5, 127.5))
     net.setInputSwapRB(True)
 
-    classIds, confs, bbox = net.detect(img, confThreshold=0.5)
+    classIds, confs, bbox = net.detect(img, confThreshold=0.4)
 
     for classId, confidence,box in zip(classIds.flatten(),confs.flatten(),bbox):
         cv2.rectangle(img,box,color=(0,255,0),thickness=2)

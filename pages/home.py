@@ -1,4 +1,7 @@
 import streamlit as st
+import time
+
+from streamlit.elements import color_picker
 
 
 def app():
@@ -17,4 +20,4 @@ def app():
                 """)
     st.write("\n")
     st.write("Till now project completed")
-    st.progress(50)
+    st.progress(0.55)
