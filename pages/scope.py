@@ -15,7 +15,7 @@ def app():
         st.write("")
 
     with col2:
-        st.image("images\object-detection-01.jpg", width=300)
+        st.image("images/object-detection-01.jpg", width=300)
 
     with col3:
         st.write("")
