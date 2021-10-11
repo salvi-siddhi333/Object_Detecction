@@ -4,7 +4,7 @@ from pages import home, prediction, scope, about
 # Configure the web page.
 st.set_page_config(
     page_title = 'Object Prediction',
-    page_icon = 'images\obj.jpg',
+    page_icon = 'images/obj.jpg',
     layout = 'centered',
     initial_sidebar_state = 'auto'
 )
