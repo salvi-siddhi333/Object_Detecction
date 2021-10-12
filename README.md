@@ -1,5 +1,8 @@
 # Object Detection
 `Python` `OpenCV` `Streamlit`
+<p align="center">
+  <img src = "https://upload.wikimedia.org/wikipedia/commons/3/38/Detected-with-YOLO--Schreibtisch-mit-Objekten.jpg" width="400" height="350" align="centre">
+</p>
 ___
 ➡️ Role of MODEL in ***Object Detection***:<br>
 _⭐ Where the OBJECT is in IMAGE<br>
