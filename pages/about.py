@@ -16,7 +16,7 @@ def app():
                     <h4>GitHub:</h4>
                     <div style="background: rgb(248, 249, 251);border-radius: 0.25rem;, height: 50px">
                         <p style="padding:10px">
-                            <a href = "https://github.com/salvi-siddhi333/" 
+                            <a href = "https://github.com/salvi-siddhi333/Object_Detection" 
                                         target="_blank"
                                         style="text-decoration:None; 
                                             color:black;

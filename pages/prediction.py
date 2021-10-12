@@ -34,23 +34,27 @@ def app():
     net.setInputMean((127.5, 127.5, 127.5))
     net.setInputSwapRB(True)
 
-    classIds, confs, bbox = net.detect(img, confThreshold=0.4)
+    try:
+      classIds, confs, bbox = net.detect(img, confThreshold=0.4)
 
-    for classId, confidence,box in zip(classIds.flatten(),confs.flatten(),bbox):
-        cv2.rectangle(img,box,color=(0,255,0),thickness=2)
-        c1 = 50.2, 12.4
-        c2 = 88.8, 40.8
-        # st.write(classId)
-        # st.write(classNames)
-        # st.write(classNames[classId-1].upper())
-        # st.write((box[0]+10,box[1]+30))
-        if(len(classNames)-1 < classId):
-          st.error("Object not detected")
-        else:
-          cv2.putText(img,classNames[classId-1].upper(),(box[0]+10,box[1]+30),
-          cv2.FONT_HERSHEY_COMPLEX,1,(0,255,0),2)
-          cv2.putText(img,str(round(confidence*100,2)),(box[0]+200,box[1]+30),
-          cv2.FONT_HERSHEY_COMPLEX,1,(0,255,0),2)
+      for classId, confidence,box in zip(classIds.flatten(),confs.flatten(),bbox):
+          cv2.rectangle(img,box,color=(0,0,0),thickness=2)
+          c1 = 50.2, 12.4
+          c2 = 88.8, 40.8
+          st.write(classId)
+          #st.write(classNames)
+          #st.write(classNames[classId-1].upper())
+          #st.write((box[0]+10,box[1]+30))
+          if(len(classNames)-1 < classId):
+            st.warning("Prediction may be incorrect, try different image!")
+          else:
+            cv2.putText(img,classNames[classId-1].upper(),(box[0]+10,box[1]+30),
+            cv2.FONT_HERSHEY_COMPLEX,1,(255,0,0),2)
+            cv2.putText(img,str(round(confidence*100,2)),(box[0]+200,box[1]+30),
+            cv2.FONT_HERSHEY_COMPLEX,1,(255,0,0),2)
+      st.image(img)
+    except:
+      st.error("This Image doenot support!")
 
 
-    st.image(img)
+ 
