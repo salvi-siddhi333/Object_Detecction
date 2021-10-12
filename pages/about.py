@@ -12,6 +12,7 @@ def app():
     Salvi Siddhi''')
     st.markdown('''#### Email:
     siddhi.salvi@sakec.ac.in''')
+    #with st.echo():
     st.markdown('''<p>
                     <h4>GitHub:</h4>
                     <div style="background: rgb(248, 249, 251);border-radius: 0.25rem;, height: 50px">

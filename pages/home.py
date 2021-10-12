@@ -16,4 +16,4 @@ def app():
                 """)
     st.write("\n")
     st.write("Till now project completed")
-    st.progress(0.75)
+    st.progress(0.85)
