@@ -23,7 +23,7 @@ def app():
                                             color:black;
                                             padding:1rem;
                                             font-family:'Courier New';"> 
-                                        siddhi
+                                        You can find my project here!
                             </a>
                         </p>
                     </div>
